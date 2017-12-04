@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<safari>
+    <Package>
+        <package_name>Multi-Country Tours</package_name>
+        <tour_name>Combo Tours: Price $1000 </tour_name>
+        <description>This mid-range combination tour is perfect for people who want to combine tracking the Mountain Gorillas in Uganda with the best national parks of Northern Tanzania. You will visit the Genocide Memorial in Kigali and track the endangered Mountain Gorilla's in Bwindi Forest. In Tanzania you will visit Lake Manyara or Tarangire National park, the famous Serengeti and the Ngorogoro crater. Accommodation has been chosen for its excellent location and level of comfort.</description>
+        <images>
+            <image>image1.jpg</image>
+            <image>image2.jpg</image>
+        </images>
+    </Package>
+    <Package>
+        <package_name>Self Drive Tour</package_name>
+        <tour_name>16 Days Self Drive: Price: $3350 </tour_name>
+        <description>
+        For a group or a romantica getaway, you watch the endangered white rhino in Ziwa Rhino Sanctuary and arrive in the afternoon in our Nature Lodges accommodation at Fort Murchison just outside Murchison Falls National Park. Have a cool drink, watch River Nile flowing by on her long journey to the Mediterranean Sea and listen to the sounds of the African night. Have a boat trip to the mighty Murchison Falls and watch numerous animals, especially lots of birds and very large Nile crocodiles. Enjoy the beautiful scenery of Uganda’s largest savannah park and see lots of Ugandan kobs, bush elephants and the endangered Rothschild’s giraffe. Maybe you will be lucky enough to have a glance of the elusive shoebill, a mixture of a stork and a pelican, when visiting the large papyrus swamps near the Nile delta.</description>
+        <images>
+            <image>shinerise.jpg</image>
+            <image>safari.jpg</image>
+        </images>
+    </Package>
+</safari>

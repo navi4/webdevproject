@@ -1,0 +1,226 @@
+
+body{
+	margin: 10px ;
+	padding: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-image: url(images/background.jpg);
+	background-attachment: fixed;
+}
+
+#container
+{
+width: 810px;
+margin: 0px auto;
+background-color: yellow;
+box-shadow: 1px 1px 1px 1px black;
+border-radius: 10px;
+background: linear-gradient(#fff 95%,#e4e4e4 );
+} #container p{
+	line-height: 1.4;
+	letter-spacing: 0.2px;
+	font-family: verdana;
+}
+
+#search{
+	width: 86px;
+	margin-bottom: -10px;
+
+}
+	#right{
+		margin-right: 7px;
+	}
+
+h1{
+	text-align: center;
+	font-family: calibri;
+	font-weight: lighter;
+
+}
+
+#topPart
+{
+	height: 62px;
+	text-align: center;	
+}
+	#headingrow{
+	float: right;
+	position: relative;
+	top: 50%;
+	
+	right: 10px}
+
+	#headingrowpicture{
+	position: relative;
+	float: left;
+	top: 21%;
+	left: 10px;}
+
+	h2{
+	font-size: 15px;
+	margin-top: -50px;
+	letter-spacing: 4px;
+	font-weight: normal;
+	margin-left:100px;
+	height: 10%;
+	position: absolute;
+	color:#1c110d;
+	}
+
+#bottomnav {
+	margin:0px auto;
+	width: 790px;
+	margin-top: -5px;
+	text-align: center;	
+	background: linear-gradient(#fff 95%,#e4e4e4 );
+	background-color: #f46542;
+}	
+	#bottomnav nav{
+		background-color: #3388BA;
+		padding-top: 10px;
+		text-align: center;	
+	}
+		#bottomnav li{
+		display: inline;
+		color: white;
+		}
+		#bottomnav nav ul li:after {
+	color:#000000;
+	content: "|";
+	text-shadow: 2px 1px white;
+	}
+	#bottomnav nav ul li:last-of-type:after
+	{
+		content: "";
+	}
+	#bottomnav nav ul a{
+	font-family: verdana;
+	font-size: .85em;
+	display: inline-block;
+	text-decoration: none;
+	height:20px;
+	padding:0px 15px;
+	color: white;
+	}
+		#bottomnav nav ul
+		{
+		display: inline;
+		margin: 0px auto;
+		padding: 0px;
+		}
+img{
+	width: 55px;
+	height: 44px;
+}
+#animal img{
+	width: 790px;
+	height: 280px;
+}
+h4{
+	font-style: italic;
+}
+
+h5{
+	font-style: italic;
+	color: #f45c42;
+}
+#sales p
+{
+	font-style: italic;
+	color: #f45c42;;
+}
+#bottomnav fieldset
+{
+	margin: -1px;
+	padding-top: 72px;
+	padding-bottom: 128px;
+	background-color:#b8f441;
+}
+
+/*// for the form systle */
+#contactID  ol li
+{
+	border-width:5px;  
+	width: 20px;
+    color: black;
+    padding-bottom: 10px;
+}  
+	#contactID 
+	{
+			background-color: #c9d6f2;
+			  border-style:none;
+	}
+#contactID ol{
+	width: 290px;
+	margin-left:200px;
+	text-align:right;
+}
+input{
+	margin-bottom: 10px;
+}
+
+#container{
+	background-color: #b8f441;
+}
+
+ nav > ul li > a:hover, nav > ul li a:focus {
+	color:white;
+	background:black;
+	border-radius: 20px;
+}
+
+
+footer{
+		
+    	height: 173px;
+    	text-align: center;
+		}
+	#footerNav  {
+	padding: 88px;
+	text-align: center;
+	width:400px;
+	margin-left: 110px;
+	font-size: 10px;
+	}
+	#footerNav nav ul,#footerNav nav ul li{
+	display:inline; 
+
+		}
+		#changecolors 
+				{
+		color: blue; 
+		}
+		#footerNav nav ul li:after {
+	color:black;
+	content: "|";
+	}
+	#footerNav nav ul li:last-of-type:after
+	{
+		content: "";
+	}
+	#footerNav nav> ul li a{
+		text-decoration: none;
+		text-align: center;
+	}
+	input:focus
+	{
+		color: green;
+		background-color: yellow;
+	}
+
+
+	
+#content 
+ {
+    padding: 100px;
+    background-color: #c9d3c9;
+
+}
+#content ul li
+{
+color:#000;
+}
+#content img
+{
+	width: 250px;
+	height: 150px;
+}
