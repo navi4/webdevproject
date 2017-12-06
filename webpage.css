@@ -6,7 +6,7 @@ body{
 	background-image: url(images/background.jpg);
 	background-attachment: fixed;
 }
-
+/*I used the css from my previous assignement*/
 #container
 {
 width: 810px;
@@ -136,7 +136,7 @@ h5{
 	background-color:#b8f441;
 }
 
-/*// for the form systle */
+/*// Previous css from assignment for the form systle */
 #contactID  ol li
 {
 	border-width:5px;  
@@ -207,7 +207,7 @@ footer{
 		background-color: yellow;
 	}
 
-
+/* This section is for the html section for adding content to it*/
 	
 #content 
  {

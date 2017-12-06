@@ -1,69 +1,58 @@
 
+ /*
+      Script name: webpage.js
+      Description: Used to validte input on the contact form.
+      Author: Ivan Wiebe
+      Date Created:01-12-2017
+      */
+      function formFieldHasInput(fieldElement)
+      {
+      	return fieldElement.value && trim(fieldElement.value);
+      }
 
-function trim(str) 
-{
-	// Uses a regex to remove spaces from a string.
-	return str.replace(/^\s+|\s+$/g,"");
-}
-
-function formFieldHasInput(fieldElement)
-{
-	
-	return fieldElement.value && trim(fieldElement.value);
-}
-
-function validate(e)
-{
+      function validate(e)
+      {
 	//	Hides all error elements on the page
 	hideErrors();
-
 	//	Determine if the form has errors
-	if (formHasErrors()){
-
-		// 	Prevents the form from submitting
+	if (formHasErrors())
+	{
 		e.preventDefault();
-		// 	Returning false prevents the form from submitting
 		return false;
 	}
-
 	return true;
 }
 
 function formHasErrors()
 {
 	var errorFlag = false;
-	//checking if shippingInfo has any errors
+	//checking for Error on tourContact from has any errors
 	var customerInfo = ["fullname","phonenumber","email"];
 	for (var i = 0; i < customerInfo.length; i++) {
 
 		var field = document.getElementById(customerInfo[i]);
-
-		if(!formFieldHasInput(field)) {
-
+		if(!formFieldHasInput(field)) 
+		{
 			var error = document.getElementById(customerInfo[i]+ "_error");
-
 			error.style.display = "block";
-
-			if (!errorFlag) {
+			if (!errorFlag) 
+			{
 				field.select(); 
 				field.focus();
 			}
-
 			errorFlag = true;
 		}
 	}
 
-		//validating if the phone number is valid or not 
+	//validating if the phone number is valid or not 
 	// regex for phone number 
 	var regex = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/);
 
 	var phoneNumber = document.getElementById("phonenumber");
 
-	if(!regex.test(phoneNumber.value)){
-
-		document.getElementById("phonenumberformat_error")
-				.style.display = "block";
-
+	if(!regex.test(phoneNumber.value))
+	{
+		document.getElementById("phonenumberformat_error").style.display = "block";
 		if(!errorFlag){
 			phoneNumber.focus();
 			phoneNumber.select();
@@ -77,16 +66,13 @@ function formHasErrors()
 
 	var emailAddress = document.getElementById("email");
 
-	if(!regex.test(emailAddress.value)){
-
-		document.getElementById("emailformat_error")
-				.style.display = "block";
-
+	if(!regex.test(emailAddress.value))
+	{
+		document.getElementById("emailformat_error").style.display = "block";
 		if(!errorFlag){
 			emailAddress.focus();
 			emailAddress.select();
 		}
-
 		errorFlag = true;
 	}
 	return errorFlag;
@@ -95,31 +81,21 @@ function formHasErrors()
 function resetForm(e)
 {
 	// Confirm that the user wants to reset the form.
-	if ( confirm('Resting Opps?') )
+	if ( confirm('Resting yaaah...Opps?') )
 	{
 		// Ensure all error fields are hidden
 		hideErrors();
-		
-		// Set focus to the first text field on the page
 		document.getElementById("fullname").focus();
-		
-		// When using onReset="resetForm()" in markup, returning true will allow
-		// the form to reset
 		return true;
 	}
-
 	// Prevents the form from resetting
 	e.preventDefault();
-	
-	// When using onReset="resetForm()" in markup, returning false would prevent
-	// the form from resetting
 	return false;	
 }
 
 function hideErrors()
 {
 	var errorFields = document.getElementsByClassName("error");
-
 	for (var i = 0; i < errorFields.length; i++) {
 		errorFields[i].style.display = "none";
 	}
@@ -129,17 +105,10 @@ function hideErrors()
 function load()
 {
 	hideErrors();
-
 	// Add event listener for the form submit
 	document.getElementById("container").addEventListener("submit", validate);
-
-	//resets the form 
-	//document.getElementById("membershipForm").reset();
-
 	// Add event listener for the form reset
 	document.getElementById("container").addEventListener("reset", resetForm);
-
-	
 }
 
 // Add document load event listener
